@@ -1,5 +1,4 @@
 using MediatR;
-
 public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand, bool>
 {
     private readonly IProductRepository _productRepository;

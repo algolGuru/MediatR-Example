@@ -5,7 +5,7 @@ public class ProductLogCreationHandler : INotificationHandler<ProductNotificatio
     public Task Handle(ProductNotification notification, CancellationToken cancellationToken)
     {
         // Логика логирования
-        Console.WriteLine($"Order {notification.ProductId} created at {notification.CreatedAt} has been logged.");
+        Console.WriteLine($"Product {notification.ProductId} created at {notification.CreatedAt} has been logged.");
         return Task.CompletedTask;
     }
 }

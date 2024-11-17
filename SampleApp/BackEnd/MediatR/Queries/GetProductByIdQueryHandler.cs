@@ -4,9 +4,9 @@ public class GetProductByIdQueryHandler : IRequestHandler<GetProductByIdQuery, P
 {
     private readonly IProductRepository _productRepository;
 
-    public GetProductByIdQueryHandler(IProductRepository orderRepository)
+    public GetProductByIdQueryHandler(IProductRepository productRepository)
     {
-        _productRepository = orderRepository;
+        _productRepository = productRepository;
     }
 
     public async Task<Product> Handle(GetProductByIdQuery request, CancellationToken cancellationToken)
